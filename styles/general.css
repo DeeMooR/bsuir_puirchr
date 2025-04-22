@@ -1,0 +1,84 @@
+
+/*--------- FONTS ----------*/
+@font-face {
+  font-family: "Museo";
+  src: url("./fonts/Museo/exljbris - Museo Cyrl 300.otf") format("opentype");
+  font-style: normal; 
+  font-weight: 400; 
+}
+
+/*--------- CONST ----------*/
+:root {
+  --font-main: 'Museo', 'Georgia';
+  --font-arial: 'Arial', 'Georgia';
+  
+  --white: #FFFFFF;
+  --black: #383838;
+  --background: #F9F3EB;
+  --mint: #7fffd4a7;
+  --blue: #6495ed;
+  --green: #8fbc8f;
+  --green-hover: #8fbc8f5f;
+  --red: #DF5A5A;
+}
+
+/*--------- NULLING STYLE ----------*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;}
+*,*:before, after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 18px;
+  font-weight: 400;
+  font-family: var(--font-main);
+  background-color: var(--background);
+  color: var(--black);
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;}
+div, p, a, span {font-family: var(--font-main);}
+input,button,textarea{font-family: var(--font-main);}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-mox-focus-inner {padding:0; border:0;}
+a, a:visited{text-decoration: none; cursor: pointer; display: block;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{display: block; vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-family: var(--font-main); font-weight: 400}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+  background-color: var(--mint);
+}
+header h1 {
+  font-size: 32px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  min-height: 50px;
+  font-size: 16px;
+  background-color: var(--mint);
+}

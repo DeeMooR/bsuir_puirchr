@@ -1,1 +1,4 @@
-# bsuir_puirchr
+# БГУИР
+### Психология управления и развития человеческих ресурсов
+
+[Открыть тесты](https://deemoor.github.io/bsuir_puirchr/)

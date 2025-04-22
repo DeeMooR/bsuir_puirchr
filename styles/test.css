@@ -1,0 +1,142 @@
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 25px 20px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 56px;
+  padding: 0 30px;
+  font-size: 18px;
+  font-family: var(--font-arial);
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.back {
+  font-size: 20px;
+  color: #666;
+  margin: 0 0 30px 0;
+}
+.back:hover {
+  text-decoration: underline;
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0 0 30px 0;
+}
+
+.tab {
+  background-color: #fff;
+  border: 3px solid var(--green);
+}
+.tab:not(.tab__active):hover {
+  background-color: var(--green-hover);
+}
+.tab__active {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  font-size: 26px;
+  margin: 0 0 30px 30px;
+}
+.question {}
+.question__title {
+  font-size: 24px;
+  margin: 0 0 7px 0;
+}
+.question__options {
+  display: flex;
+  flex-direction: column;
+}
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.buttons__send {
+  background-color: var(--blue);
+  color: var(--white);
+  transition: all 0.15s ease-in-out;
+}
+.buttons__send:hover {
+  opacity: 0.8;
+}
+.buttons__reset {
+  background-color: var(--red);
+  color: var(--white);
+  transition: all 0.15s ease-in-out;
+}
+.buttons__reset:hover {
+  opacity: 0.8;
+}
+
+.resultMessage {
+  display: none;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--font-arial);
+  margin: 20px 0 0 0;
+  color: var(--blue);
+}
+.errorMessage {
+  display: none;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: var(--font-arial);
+  margin: 20px 0 0 0;
+  color: var(--red);
+}
+
+/* ------------ RADIO BUTTONS ------------ */
+
+.question__label {
+  display: block;
+  position: relative;
+  padding: 3px 30px;
+  width: fit-content;
+  font-size: 24px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.question__label input {
+  position: absolute;
+  opacity: 0;
+  height: 0;
+  width: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 9px;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: var(--white);
+  border: 2px solid var(--green);
+  border-radius: 50%;
+}
+
+.question__label:hover input ~ .checkmark {
+  background-color: var(--green-hover);
+}
+
+.question__label input:checked ~ .checkmark {
+  background-color: var(--green);
+}
