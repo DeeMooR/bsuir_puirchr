@@ -7,7 +7,7 @@ let tab_id = 1;
 let answers = [];
 let tab = [];
 
-if (!theme_id) window.location.href = 'main.html';
+if (!theme_id) window.location.href = 'index.html';
 
 // Обновление ошибки и результата
 
